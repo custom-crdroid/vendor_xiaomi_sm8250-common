@@ -508,7 +508,6 @@ PRODUCT_PACKAGES += \
     libwfdmmsink \
     libwfdmmsrc_system \
     libwfdrtsp \
-    libwfdservice \
     libwfdsinksm \
     libwfduibcinterface \
     libwfduibcsink \
@@ -612,8 +611,7 @@ PRODUCT_PACKAGES += \
     xtra-daemon \
     xtwifi-client \
     xtwifi-inet-agent \
-    dpmd \
-    wfdservice
+    dpmd
 
 PRODUCT_PACKAGES += \
     libEGL_adreno_libEGL_adreno_symlink32 \

@@ -6599,22 +6599,6 @@ cc_prebuilt_library_shared {
 	system_ext_specific: true,
 }
 
-cc_prebuilt_library_shared {
-	name: "libwfdservice",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/system_ext/lib/libwfdservice.so"],
-			shared_libs: ["liblog", "libutils", "libcutils", "libbinder", "libgui", "libwfdsinksm", "libmmosal", "libwfdcommonutils", "libwfdconfigutils", "libinput", "libwfdmminterface", "libmedia_helper", "libaudioclient", "libaudiofoundation", "audioclient-types-aidl-cpp", "android.media.audio.common.types-V3-cpp", "libwfdmmsrc_system", "libwfdavenhancements", "libhidlbase", "vendor.qti.hardware.wifidisplaysession@1.0", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "32",
-	prefer: true,
-	system_ext_specific: true,
-}
 
 cc_prebuilt_library_shared {
 	name: "libwfdsinksm",
@@ -8286,22 +8270,6 @@ cc_prebuilt_binary {
 	system_ext_specific: true,
 }
 
-cc_prebuilt_binary {
-	name: "wfdservice",
-	owner: "xiaomi",
-	target: {
-		android_arm: {
-			srcs: ["proprietary/system_ext/bin/wfdservice"],
-			shared_libs: ["liblog", "libutils", "libcutils", "libbinder", "libwfdservice", "libmmosal", "libwfdcommonutils", "libwfdconfigutils", "libhidlbase", "libavservices_minijail", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "32",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	system_ext_specific: true,
-}
 
 install_symlink {
 	name: "libEGL_adreno_libEGL_adreno_symlink32",
