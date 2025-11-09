@@ -558,7 +558,6 @@ PRODUCT_PACKAGES += \
     TimeService \
     PowerOffAlarm \
     QtiTelephonyService \
-    WfdService \
     ims \
     qcrilmsgtunnel \
     WfdCommon \
